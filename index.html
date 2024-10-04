@@ -22,17 +22,49 @@
 <body>
 
   <section class="paralax-Img01">
-    <nav class="nav-paralax">
-        <ul class="nav-paralax-ul">
-            <li><p>botao1</p></li>
-            <li><p>botao2</p></li>
-            <li><p>botao3</p></li>
-            <li><p>botao4</p></li>
-            <li><p>botao5</p></li>
-            <li><p>botao6</p></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-custom" id="header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="navbar-brand" src="assets/logo.jpg" alt="imagem logo" ></a>
+            <button class="navbar-toggler" type="button" style="background-color: rgba(255, 255, 255, 0.908);"
+                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-item-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu nav-item-3">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button class="btn btn-primary button-nav-paralax" type="submit">Button</button>
+                <button id="theme-toggle" style="background-color: white;" class="btn" aria-label="Alterar tema">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
     </nav>
-    <div class="paralax-text01">
+    <div class="btn-contato">
+        <a href="#"><button>Contato</button></a>
+    </div>
+    <div class="paralax-text01 text-center">
         <p class="paralax-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <h3 class="paralax-title">Lorem ipsum dolor sit.</h3>
         <h2 class="paralax-text1">Com a doçura do novo tempo, o bosque se cobre de folhas...</h2>
@@ -403,17 +435,22 @@
       <p>Descrição do seu conteúdo.</p>
     </div>
   </div>
-  
 
-<!-- video-com-link-do-youtube -->
-<div class="video-container video-menu">
-  <iframe src="https://www.youtube.com/embed/LX0yrRCIqXk?si=Jr2OS8R8NxOf9SBr&controls=0&autoplay=1&mute=1&loop=1&playlist=LX0yrRCIqXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media" allowfullscreen style="pointer-events: none;"></iframe>
 
-  <div class="text-overlay">
+  <!-- video-com-link-do-youtube -->
+  <div class="video-container video-menu">
+    <iframe
+      src="https://www.youtube.com/embed/LX0yrRCIqXk?si=Jr2OS8R8NxOf9SBr&controls=0&autoplay=1&mute=1&loop=1&playlist=LX0yrRCIqXk"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media" allowfullscreen
+      style="pointer-events: none;"></iframe>
+
+    <div class="text-overlay">
       <h1>Seu Texto Aqui</h1>
       <p>Descrição do seu conteúdo.</p>
+    </div>
   </div>
-</div>
 
 
 
@@ -439,6 +476,18 @@
     </div>
   </section>
 
+
+  <!------coockies-rules------->
+  <div id="cookie-banner" class="cookie-banner"
+    style="display: none; position: fixed; bottom: 0; width: 100%; background-color: #333; color: #fff; padding: 10px; text-align: center;">
+    Este site usa cookies para melhorar sua experiência.
+    <button id="accept-cookies"
+      style="margin-left: 10px; padding: 5px 10px; background-color: #28a745; color: #fff; border: none; cursor: pointer;">Aceitar</button>
+    <button id="decline-cookies"
+      style="margin-left: 10px; padding: 5px 10px; background-color: #dc3545; color: #fff; border: none; cursor: pointer;">Recusar</button>
+  </div>
+
+    <!------footer-area------->
   <footer class="bg-dark text-white pt-5">
     <div class="container">
       <div class="row">
@@ -482,7 +531,7 @@
       <p class="text-center mt-3">© 2024 Advocacia Trabalhista LTDA - Todos os direitos reservados.</p>
     </div>
   </footer>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

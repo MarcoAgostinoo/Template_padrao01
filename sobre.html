@@ -21,13 +21,15 @@
 </head>
 
 <body>
-    <section class="paralax-Img01" id="header">
-        <nav class="navbar navbar-expand-lg navbar-custom">
+
+
+    <header class="paralax-Img01">
+        <nav class="navbar navbar-expand-lg navbar-custom" id="header">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="assets/logo.jpg" alt="" style="width: 100px;"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img class="navbar-brand" src="assets/logo.jpg" alt="imagem logo" ></a>
+                <button class="navbar-toggler" type="button" style="background-color: rgba(255, 255, 255, 0.908);"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -53,82 +55,89 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <button style="btn button-nav-paralax" style="border-radius: 10px;">
-                        button
-                    </button>
+                    <div>
+                        <button class="btn btn-primary button-nav-paralax" type="submit">Button</button>
+                        <button id="theme-toggle" style="background-color: white;" class="btn" aria-label="Alterar tema">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </div>
                 </div>
         </nav>
-        <div class="btn-contato">
-            <a href="#"><button>Contato</button></a>
-        </div>
-        <div class="paralax-text01 text-center">
-            <p class="paralax-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <h3 class="paralax-title">Lorem ipsum dolor sit.</h3>
-            <h2 class="paralax-text1">Com a doçura do novo tempo, o bosque se cobre de folhas...</h2>
+        <div class="paralax-text01">
+            <h3 class="text-start paralax-h3">Equipe de advogados prontos para qualquer situação</h3>
+            <h5 class="text-start paralax-h3">Obtenha aconselhamento jurídico de nossos advogados experientes</h5>
             <div class="container-button-paralax"></div>
         </div>
-    </section>
+    </header>
 
-  <!-- text-and-video-01-->
-  <div class="video-container">
-    <video autoplay muted loop>
-      <source src="assets/videoplayback.mp4" type="video/mp4">
-      Seu navegador não suporta este formato de vídeo.
-    </video>
-    <div class="text-overlay">
-      <h1>Seu Texto Aqui</h1>
-      <p>Descrição do seu conteúdo.</p>
-    </div>
-  </div>
-
-
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
-        data-bs-interval="3000" data-bs-wrap="true">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+    <!-- text-and-video-01-->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="assets/videoplayback.mp4" type="video/mp4">
+            Seu navegador não suporta este formato de vídeo.
+        </video>
+        <div class="text-overlay">
+            <h1>Seu Texto Aqui</h1>
+            <p>Descrição do seu conteúdo.</p>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="assets/banner1.jpg" class="d-block w-100" alt="imagem banner">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="assets/banner2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="assets/banner3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    <!--End-Carroucel-->
+
+
+    <!------coockies-rules------->
+    <div id="cookie-banner" class="cookie-banner"
+        style="display: none; position: fixed; bottom: 0; width: 100%; background-color: #333; color: #fff; padding: 10px; text-align: center;">
+        Este site usa cookies para melhorar sua experiência.
+        <button id="accept-cookies"
+            style="margin-left: 10px; padding: 5px 10px; background-color: #28a745; color: #fff; border: none; cursor: pointer;">Aceitar</button>
+        <button id="decline-cookies"
+            style="margin-left: 10px; padding: 5px 10px; background-color: #dc3545; color: #fff; border: none; cursor: pointer;">Recusar</button>
+    </div>
+
+    <!------footer-area------->
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nós</h5>
+                    <p>O Escritório de Advocacia Trabalhista oferece suporte jurídico especializado. Nossa missão é
+                        promover
+                        justiça e garantir que os direitos trabalhistas sejam respeitados.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Serviços</h5>
+                    <ul class="list-unstyled">
+                        <li>Consultoria Trabalhista</li>
+                        <li>Defesa em Ações Judiciais</li>
+                        <li>Elaboração de Contratos</li>
+                        <li>Mediação e Conciliação</li>
+                        <li>Assessoria em Segurança do Trabalho</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p><strong>Endereço:</strong> RUA DOS ADVOGADOS, 100, SÃO PAULO - SP, CEP: 01234-567</p>
+                    <p><strong>Telefone:</strong> <a href="tel:11987654321" class="text-white">11 9 8765 4321</a></p>
+                    <p><strong>E-mail:</strong> <a href="mailto:contato@advocaciatrabalhista.com.br"
+                            class="text-white">contato@advocaciatrabalhista.com.br</a></p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <h5>Redes Sociais</h5>
+                <a href="#" class="text-white mx-2" title="Facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white mx-2" title="Twitter" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-white mx-2" title="Instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+            <p class="text-center mt-3">© 2024 Advocacia Trabalhista LTDA - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
