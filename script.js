@@ -72,3 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
         cookieBanner.style.display = 'none';
     });
 });
+const paragraphs = document.querySelectorAll('.showcase-txt-p');
+
+// configuração do showcase reticências 
+paragraphs.forEach(paragraph => {
+  paragraph.textContent = paragraph.textContent.slice(0, 142) + '...';
+});
+
